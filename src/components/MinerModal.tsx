@@ -23,23 +23,23 @@ const MinerModal = (props: any) => {
           <div className="modal-content">
             <h2>Pojašnjenje miner podataka:</h2>
             <p>
-              <span>{minerData.TH5s}</span> - hashrate u zadnjih 5s
+              <span>{minerData?.TH5s || 'N/A'}</span> - hashrate u zadnjih 5s
             </p>
             <p>
-              <span>{minerData.THAvg}</span> - prosječan hashrate kroz zadnjih
-              sat vremena
+              <span>{minerData?.THAvg || 'N/A'}</span> - prosječan hashrate kroz
+              zadnjih sat vremena
             </p>
             <p>
-              <span>{minerData.tB}</span> - temperatura pločice minera
+              <span>{minerData?.tB || 'N/A'}</span> - temperatura pločice minera
             </p>
             <p>
-              <span>{minerData.freq}</span> - frekvencija
+              <span>{minerData?.freq || 'N/A'}</span> - frekvencija
             </p>
             <p>
-              <span>{minerData.w}</span>- trenutna snaga minera
+              <span>{minerData?.w || 'N/A'}</span> - trenutna snaga minera
             </p>
             <p>
-              <span>{minerData.s}</span> - stanje minera (10 - OK, 20 - gubitak
+              <span>{minerData.s}</span> -stanje minera (10 - OK, 20 - gubitak
               hashratea, 30 - upozorenje, 40 - manji problemi, 50 - veći
               problemi, 60 - stanje kritično)
             </p>
