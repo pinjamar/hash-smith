@@ -30,3 +30,5 @@ npm run dev
 -and in another terminal
 
 json-server --watch miners.json --port 3001
+
+Bundled site is in the folder "solution".
